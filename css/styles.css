@@ -1,0 +1,158 @@
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+    font-family:'Inter';
+		outline: saolid;
+  }
+
+  @font-face { 
+    font-family: Inter;
+    src: url("../fontes/Inter-VariableFont_slnt,wght.ttf");
+  }
+
+	.content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+		height: 100vh;
+		background: #4169e169;
+	}
+
+	.mensage{
+		width: 90%;
+		height: 300px;
+		background: #FFF;
+		border: 10px double #4169e1;
+		border-radius: 15px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+		padding: 20px;
+	}
+
+	.textMensage,
+	.imgMensage{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.divBtn{
+		display: flex;
+		gap: 20px;
+	}
+
+	.textMensage,
+	.divBtn{
+		color: #49326B;
+		font-family: Arial;
+		text-align: center;
+	}
+
+
+
+
+
+
+
+
+
+/*======================================================================================
+	/*.textMensage,
+	.imgMensage,
+	.divBtn{
+		animation: 2s aparece forwards;
+		animation-delay: 2s;
+	}
+
+	@keyframes aparece{
+		from {
+			display: none;
+			opacity: 0;
+		}
+
+		to {
+			display: flex;
+			opacity: 1;
+		}
+	}*/
+
+	.textMensage #atraso{
+		color: red;
+		text-decoration: line-through;
+	}
+
+	.textMensage p{
+		width: 100%;
+		text-align: justify;
+		padding: 10px 0px;
+	}
+
+	.min{
+		width: 60% !important;
+	}
+
+	.imgMensage{
+		width: 200px;
+		height: 100%;
+	}
+
+	.imgMensage img{
+		max-width: 100%;
+	}
+
+	.divBtn{
+		margin: 10px;
+		padding: 10px;
+	}
+
+	.divBtn button{
+		width: 240px;
+		background: #4169e169;
+		border: solid #FFFFFF99;
+		border-radius: 15px;
+		color: #FFF;
+		font-weight: bold;
+		padding: 8px 10px;
+		animation: 5s pisca infinite;
+	}
+
+	@keyframes pisca{
+		0%{
+			box-shadow: none;
+		}
+		10%{
+			box-shadow: 0px 0px 15px #49326B69;
+		}
+		20%{
+			box-shadow: none;
+		}
+		30%{
+			box-shadow: 0px 0px 15px #49326B69;
+		}
+		40%{
+			box-shadow: none;
+		}
+		100%{
+			box-shadow: none;
+		}
+	}
+
+@media only screen and (max-width: 425px){
+	.mensage{
+		flex-direction: column-reverse;
+		gap: 10px;
+		padding: 10px;
+	}
+
+	.min{
+		width: 100% !important;
+	}
+
+}
