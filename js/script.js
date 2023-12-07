@@ -1,5 +1,3 @@
-
-
     function mensage1() {
         var element = document.getElementById("mensage-1");
         element.classList.add("contentMensage-1");
