@@ -6,7 +6,7 @@
 		outline: ssolid;
 	}
 
-	::-webkit-scrollbar{
+	*::-webkit-scrollbar{
 		visibility: hidden;
 		width: 0;
 	}
