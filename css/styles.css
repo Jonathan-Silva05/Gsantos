@@ -5,10 +5,9 @@
     		font-family:'Inter';
 		outline: ssolid;
 	}
-
-	*::-webkit-scrollbar{
-		visibility: hidden;
-		width: 0;
+	
+	body::-webkit-scrollbar { 
+		display: none;
 	}
 
 	@font-face { 
